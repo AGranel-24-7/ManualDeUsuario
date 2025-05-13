@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manual de Usuario - AGranel 24/7</title>
-  <style>
-    body {
-      background-color: #f4f4f4;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-    }
-    img {
-      max-width: 300px;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="icon" type="image/x-icon" href="assets/LogoIco.ico" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🚧 Sitio en construcción</h1>
-  <p>Estamos trabajando en el Manual de Usuario para brindarte la mejor experiencia. Vuelve pronto.</p>
-  <img src="https://i.imgur.com/qIufhof.png" alt="Sitio en construcción">
+  <header>
+    <h1>Manual de Usuario</h1>
+    <h2>AGranel 24/7</h2>
+  </header>
+
+  <button class="menu-toggle" aria-label="Abrir menú">☰ Menú</button>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="requisitos.html">1. Requisitos de Instalación</a></li>
+      <li><a href="uso.html">2. Instrucciones de uso</a></li>
+      <li><a href="configuracion.html">3. Configuración inicial</a></li>
+      <li><a href="configuracionProductos.html">4. Configuración de productos</a></li>
+      <li><a href="MasConfiguraciones.html">5. Más configuraciones</a></li>
+      <li><a href="problemas.html">6. Solución de problemas</a></li>
+      <li><a href="mantenimiento.html">7. Mantenimiento</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="bienvenida">
+      <h3>Bienvenido</h3>
+      <p>Este manual interactivo te guiará paso a paso en la instalación, uso y mantenimiento de tu tarjeta vending AGranel 24/7.</p>
+      <img src="assets/images/PCBA.png" alt="Tarjeta vending AGranel" class="imagen-bienvenida">
+
+      <div class="siguiente-pagina">
+        <a href="requisitos.html" class="btn-siguiente">Siguiente: Requisistos de instalación →</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

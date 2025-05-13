@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solución de Problemas - AGranel 24/7</title>
+  <link rel="icon" type="image/x-icon" href="assets/LogoIco.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Manual de Usuario</h1>
+    <h2>AGranel 24/7</h2>
+  </header>
+
+  <button class="menu-toggle" aria-label="Abrir menú">☰ Menú</button>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="requisitos.html">1. Requisitos de Instalación</a></li>
+      <li><a href="uso.html">2. Instrucciones de uso</a></li>
+      <li><a href="configuracion.html">3. Configuración inicial</a></li>
+      <li><a href="configuracionProductos.html">4. Configuración de productos</a></li>
+      <li><a href="MasConfiguraciones.html">5. Más configuraciones</a></li>
+      <li><a href="problemas.html">6. Solución de problemas</a></li>
+      <li><a href="mantenimiento.html">7. Mantenimiento</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contenido">
+      <h2>6. Solución de Problemas</h2>
+      <p>En esta sección encontrarás respuestas a los errores más comunes que pueden ocurrir durante la operación o instalación de la tarjeta vending AGranel 24/7.</p>
+
+      <h3>6.1 La tarjeta no enciende</h3>
+      <ul>
+        <li>Verifica que la fuente de alimentación esté conectada y funcionando (12 V, mínimo 10 A).</li>
+        <li>Asegúrate de que los cables de alimentación estén correctamente conectados (positivo y negativo).</li>
+        <li>Confirma que no haya falsos contactos en los terminales.</li>
+      </ul>
+
+      <h3>6.2 La bomba no despacha producto</h3>
+      <ul>
+        <li>Verifica que la bomba esté conectada correctamente.</li>
+        <li>Revisa si el producto está bloqueado en el menú de configuración.</li>
+        <li>Confirma que el tiempo de despacho esté configurado y que haya cantidad disponible.</li>
+        <li>Verifica si el audio dice “No hay producto disponible”, lo que indica que el producto fue bloqueado.</li>
+      </ul>
+
+      <h3>6.3 No llegan notificaciones a Telegram</h3>
+      <ul>
+        <li>Revisa que la tarjeta esté conectada a WiFi correctamente.</li>
+        <li>Verifica que el <strong>Token</strong> y el <strong>Chat ID</strong> estén bien ingresados.</li>
+        <li>Asegúrate de haber iniciado el bot en Telegram (botón <strong>Start</strong>).</li>
+        <li>Envía una <strong>notificación de prueba</strong> desde el menú: <code>Config → WiFi → Telegram → Notificación de prueba</code>.</li>
+      </ul>
+
+      <h3>6.4 La pantalla no responde o se congela</h3>
+      <ul>
+        <li>Reinicia la tarjeta presionando el botón <strong>RTS</strong>.</li>
+        <li>Verifica que el encoder (control rotativo) esté conectado correctamente.</li>
+        <li>Si usas una pantalla OLED o TFT, asegúrate de que esté bien soldada y no haya pines sueltos.</li>
+      </ul>
+
+      <h3>6.5 El monedero o billetero no detecta monedas o billetes</h3>
+      <ul>
+        <li>Confirma que estén habilitados en el menú: <code>Config → Billetero</code>.</li>
+        <li>Verifica si el conector está bien enchufado y no invertido.</li>
+        <li>Reinicia la tarjeta después de conectarlos.</li>
+      </ul>
+
+      <div class="siguiente-pagina">
+        <a href="mantenimiento.html" class="btn-siguiente">Siguiente: Mantenimiento →</a>
+      </div>
+
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

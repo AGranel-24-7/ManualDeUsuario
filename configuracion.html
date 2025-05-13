@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuración Inicial - AGranel 24/7</title>
+  <link rel="icon" type="image/x-icon" href="assets/LogoIco.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Manual de Usuario</h1>
+    <h2>AGranel 24/7</h2>
+  </header>
+
+  <button class="menu-toggle" aria-label="Abrir menú">☰ Menú</button>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="requisitos.html">1. Requisitos de Instalación</a></li>
+      <li><a href="uso.html">2. Instrucciones de uso</a></li>
+      <li><a href="configuracion.html">3. Configuración inicial</a></li>
+      <li><a href="configuracionProductos.html">4. Configuración de productos</a></li>
+      <li><a href="MasConfiguraciones.html">5. Más configuraciones</a></li>
+      <li><a href="problemas.html">6. Solución de problemas</a></li>
+      <li><a href="mantenimiento.html">7. Mantenimiento</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contenido">
+      <h2>3. Configuración Inicial</h2>
+
+      <p>Esta configuración la realiza el servicio técnico antes de la entrega del equipo vending. El usuario final no debe realizar ninguna de estas configuraciones, ya que podría descalibrar el equipo.</p>
+
+      <p>Al iniciar la tarjeta, ir a la opción en menu principal <strong>Tipo de Vending</strong> y seleccionar el tipo que desea configurar:</p>
+      <ol>
+        <li>Productos de limpieza</li>
+        <li>Productos automotriz</li>
+        <li>Granos y semillas</li>
+        <li>Croquetas para mascotas</li>
+        <li>Purificadora (Incluye DUO, solo agua, solo hielo)</li>
+      </ol>
+
+      <h3>3.1 Desactivación de funciones no utilizadas</h3>
+      <ul>
+        <li>Si no se usará el billetero: <code>Config → Billetero → Desactivado</code></li>
+        <li>Si no se usará el NFC: <code>Config → NFC → Habilitar → Desactivado</code></li>
+        <li>Si no se usará el sistema hopper: <code>Config → Cambio → Habilitar → Desactivado</code></li>
+        <li>Si no se usará el audio: <code>Config → Audio → Habilitar → Desactivado</code></li>
+      </ul>
+
+      <h3>3.2 Configuracion solo Agua en purificadora</h3>
+      <ul>
+        <li>Para configurar solamente venta de agua hay que desactivar el sensor de temperatura, ir a: <br> <code>Config → Sensores → Temperatura → Tipo → Desactivado</code></li>
+      </ul>
+
+      <h3>3.3 Configuracion solo Hielo en purificadora</h3>
+      <ul>
+        <li>Para configurar solamente venta de hielo hay que desactivar el sensor de presion, ir a: <br> <code>Config → Sensores → Presion → Desactivado</code></li>
+      </ul>
+
+      <h3>3.4 Configuracion Purificadora DUO</h3>
+      <ul>
+        <li>Para una purificadora DUO el sensor de presion y el de temperatura deben estar activados:</li>
+          <code>Config → Sensores → Temperatura → Tipo → Rele</code>
+          <br><code>Config → Sensores → Presion → Rele</code>
+      </ul>
+
+      <p>Después de terminar esta configuración inicial, reinicie la tarjeta presionando el botón <strong>RTS</strong>.</p>
+
+      <div class="tarjeta">
+        <img src="assets/images/BotonRST.png" alt="Botón RTS">
+        <p class="descripcion">Ubicación del botón RTS en la tarjeta vending.</p>
+      </div>
+
+
+      <div class="siguiente-pagina">
+        <a href="configuracionProductos.html" class="btn-siguiente">Siguiente: Configuracion de productos →</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

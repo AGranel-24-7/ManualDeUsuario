@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuración de Productos - AGranel 24/7</title>
+  <link rel="icon" type="image/x-icon" href="assets/LogoIco.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Manual de Usuario</h1>
+    <h2>AGranel 24/7</h2>
+  </header>
+
+  <button class="menu-toggle" aria-label="Abrir menú">☰ Menú</button>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="requisitos.html">1. Requisitos de Instalación</a></li>
+      <li><a href="uso.html">2. Instrucciones de uso</a></li>
+      <li><a href="configuracion.html">3. Configuración inicial</a></li>
+      <li><a href="configuracionProductos.html">4. Configuración de productos</a></li>
+      <li><a href="MasConfiguraciones.html">5. Más configuraciones</a></li>
+      <li><a href="problemas.html">6. Solución de problemas</a></li>
+      <li><a href="mantenimiento.html">7. Mantenimiento</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contenido">
+      <h2>4. Configuración de Productos</h2>
+
+      <p>La opción <strong>Productos</strong> dentro del menú principal cambia dependiendo del tipo de vending seleccionado:</p>
+
+      <ul>
+        <li><a href="#productos"><strong>Productos de limpieza</strong></a> y <strong>automotriz</strong>: aparece como <strong>Productos</strong>.</li>
+        <li><a href="#productos"><strong>Granos y semillas</strong></a>: aparece como <strong>Granos</strong>.</li>
+        <li><a href="#productos"><strong>Croquetas para mascotas</strong></a>: aparece como <strong>Croquetas</strong>.</li>
+        <li><a href="#purificadora"><strong>Purificadora</strong></a>: aparece como <strong>Botones</strong></li>
+      </ul>
+
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="tarjeta mini">
+            <img src="assets/images/OpProductos.png" alt="Productos">
+            <p class="descripcion">Configuración de productos de limpieza.</p>
+          </div>
+          <div class="tarjeta mini">
+            <img src="assets/images/OpBotones.png" alt="Botones">
+            <p class="descripcion">Configuración de productos en purificadora.</p>
+          </div>
+          <div class="tarjeta mini">
+            <img src="assets/images/OpCroquetas.png" alt="Croquetas">
+            <p class="descripcion">Vista de productos tipo croquetas o granos.</p>
+          </div>
+        </div>
+        <div class="carousel-dots"></div>
+      </div>
+
+      <p>Al acceder a la configuración de productos, según el tipo de vending seleccionado, se mostrará una lista con los productos disponibles. Puedes ingresar a cada uno para ajustar sus parámetros de forma individual.</p>
+
+      <h3 id="productos">4.1 Configuraciones para Productos, Granos y Croquetas</h3>
+
+      <ul>
+        <li><strong>Cantidad:</strong> Establece la cantidad disponible en la máquina para cada producto. Utiliza el control rotativo para seleccionar el valor y guarda los cambios regresando al menú anterior.</li>
+        <li><strong>Costo:</strong> Define el precio por litro o kilo del producto. Ajusta el valor con el control rotativo.</li>
+        <li><strong>Tiempo:</strong> Configura el tiempo de despacho para 1 litro o kilo. Esta opción solo debe modificarse si es necesario después de la calibración.</li>
+        <li><strong>Nombre:</strong> Permite asignar un nombre al producto. Navega por el abecedario con el control rotativo y selecciona letra por letra.</li>
+        <li><strong>Bloqueo:</strong> Desactiva temporalmente el producto en caso de agotamiento. Si el audio está habilitado, el sistema notificará al cliente con el mensaje: <em>“No hay producto disponible.”</em></li>
+        <li><strong>CashBack:</strong> Establece un porcentaje de reembolso que se deposita en el monedero electrónico del cliente. Esta función requiere que el sensor NFC esté activado.</li>
+      </ul>
+
+
+      <h3 id="purificadora">4.2 Configuraciones para Purificadora</h3>
+      <ul>
+        <li><strong>Costo:</strong> Define el precio por litro o kilo del producto. Gira el control rotativo para ajustarlo.</li>
+        <li><strong>Tiempo:</strong> Ajusta el tiempo que tarda en despacharse 1 litro o kilo. Solo se recomienda modificar esta opción después de la calibración.</li>
+        <li><strong>Tipo de Agua:</strong> Permite seleccionar entre Enjuague, Hielo, Purificada o Alcalina. Estas opciones deben coincidor con los textos mostrados en los botones físicos de la máquina.</li>
+        <li><strong>Cantidad:</strong> Ofrece opciones como Hielo 2.5kg, Hielo 5kg, Hielo 10kg, Enjuague, Garrafón 20L, Garrafón 10L o Botella 1L. Selecciona la opción que corresponda al formato físico del producto ofrecido en cada botón.</li>
+        <li><strong>Bloqueo:</strong> Desactiva temporalmente el producto. Si el audio está activado, el cliente escuchará: <em>“No hay producto disponible.”</em></li>
+        <li><strong>CashBack:</strong> Asigna un porcentaje de devolución al monedero electrónico. Requiere el sensor NFC activado.</li>
+      </ul>
+
+
+      <div class="siguiente-pagina">
+        <a href="MasConfiguraciones.html#funciones" class="btn-siguiente">Siguiente: Calibración →</a>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
